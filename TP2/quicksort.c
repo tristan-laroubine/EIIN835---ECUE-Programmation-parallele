@@ -85,6 +85,7 @@ void generateReverseSortedArray(struct tablo *s, int size) {
 
 int main(int argc, char **argv) {
     struct tablo * tmp = malloc(sizeof(struct tablo));
-    generateReverseSortedArray(tmp, 500000);
+    int taille = atoi(argv[1]);
+    generateReverseSortedArray(tmp, taille);
     quicksort(tmp,0, tmp->size);
 }
