@@ -6,7 +6,7 @@
 void loopTablo(int *a, int size){
     for (int i = 0; i < size; ++i) {
         *(a+i)  = 1;
-        printf("%e | ",*(a+i));
+        printf("%d | ",*(a+i));
     }
 }
 
