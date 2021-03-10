@@ -92,4 +92,3 @@ int main(int argc, char **argv) {
     generateReverseSortedArray(tmp, taille);
     quicksort(tmp,0, tmp->size);
 }
-}
