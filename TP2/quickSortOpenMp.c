@@ -13,6 +13,7 @@ struct tablo {
     int size;
 };
 void quicksort(struct tablo * ta, int index_min, int index_max) {
+
     int i,j;
     int v, t;
     if (index_max-index_min<2) return;
@@ -30,12 +31,12 @@ void quicksort(struct tablo * ta, int index_min, int index_max) {
     ta->tab[i-1]=ta->tab[index_min];
     ta->tab[index_min]=t;
 #ifdef _OPENMP
-    if(index_max == ta->size) {
-            printf("nthreads %d\n", omp_get_num_threads());
-        }
+
+        omp_set_nested(1);
         omp_set_max_active_levels(10000);
 #endif
 #pragma omp parallel sections
+
     {
 #pragma omp section
         {
