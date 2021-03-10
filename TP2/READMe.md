@@ -36,4 +36,12 @@ real    0m7,509s
 user    0m7,494s
 sys     0m0,012s
 ```
+
+### avec Random
+`gcc -o quicksortR quicksortRandom.c`
+
 ![GitHub Logo](../img/TD%202.1.PNG)
+
+### with Open MP
+`gcc -o quicksortOpenMp quickSortOpenMp.c`
+
