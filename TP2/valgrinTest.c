@@ -11,7 +11,7 @@ void loopTablo(int *a, int size){
 }
 
 int main(int argc, char* argv[]){
-    int taille = atoi(argv[1] * sizeof(int));
+    int taille = atoi(argv[1]);
     int* tab = malloc(sizeof(int[taille]));
     loopTablo(tab,taille);
 }
